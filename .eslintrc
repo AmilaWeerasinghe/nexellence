@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "prettier"
+  ],
+  "settings": {
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "plugins": [
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    "import/first": 2,
+    "no-console": "warn",
+    "no-eval": "error",
+    "no-unused-vars": "warn",
+    "no-plusplus": "error",
+    "no-duplicate-imports": "error",
+    "semi": 1
+  }
+}

@@ -1,8 +1,10 @@
+[![Build Status](https://travis-ci.org/luk3Sky/nexellence.svg?branch=client-react-dev)](https://travis-ci.org/luk3Sky/nexellence)
+
 # Nexellence 
 
 Nexellence is a smart educational institute managemanet system. It is built with React, Node.js, and the Lightning Design System. Nexellence is written using ECMAScript 6 on the client and on the server (leveraging the new ES6 support of Node.js 4).
 
-The back-end is built with **Node.js** using a **Postgres** database. 
+The back-end is built with **Node.js** using a **Postgres** database.
 
 ## Automatic Deployment to Heroku
 
@@ -20,7 +22,7 @@ Follow the instructions below if you prefer to install the application on your l
 
 1. Install the latest version of [Node.js](https://nodejs.org). This application requires Node.js 4.x.
 
-1. Install [Postgres](http://www.postgresql.org/) locally 
+1. Install [Postgres](http://www.postgresql.org/) locally
 
 1. Start Postgres and create a database called **university**.
 
@@ -39,15 +41,15 @@ Follow the instructions below if you prefer to install the application on your l
     ```
     npm run webpack
     ```
-    
+
     The project is written using ECMAScript 6 including ECMAScript 6 modules.
 
 1. Type the following command to start the server:
-    
+
     ```
     npm start
     ```
-    
+
     The database is automatically populated
-    
+
 1. Open a browser and access [http://localhost:5000](http://localhost:5000)

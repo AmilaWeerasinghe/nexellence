@@ -1,5 +1,8 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 var express = require('express'),
     bodyParser = require('body-parser'),
+    cors = require('cors'),
     compression = require('compression'),
     students = require('./server/students'),
     courses = require('./server/courses'),
@@ -11,10 +14,11 @@ var express = require('express'),
 
 app.set('port', process.env.PORT || 5000);
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(compression());
 
-app.use('/', express.static(__dirname + '/www'));
+// app.use('/', express.static(__dirname + '/www'));
 
 app.get('/students', students.findAll);
 app.get('/students/:id', students.findById);
@@ -42,7 +46,7 @@ app.delete('/enrollments/:id', enrollments.deleteItem);
 
 app.get('/periods', periods.findAll);
 
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     console.error(err.stack);
     res.status(500).send(err);
 });
